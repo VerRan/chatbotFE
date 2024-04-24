@@ -4,12 +4,21 @@ select unbuntu 22.04 linux
 please open ports 80 and 3000 for the security group
 ## Login in ec2 server and download code  
 `git clone https://github.com/xiehust/chatbotFE.git`  
-change .env.sample to .env and change the API_http and API_socket from to your CDK deployment result  
 
 ## Install nodejs and yarn
 `curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -`  
 `sudo apt-get install -y nodejs`  
 `sudo npm install yarn -g`  
+
+## Install backend service with cdk
+`cd deoploy`  
+* `npm run test`         perform the jest unit tests
+* `cdk deploy`           deploy this stack to your default AWS account/region
+* `cdk diff`             compare deployed stack with current state
+* `cdk synth`            emits the synthesized CloudFormation template
+
+change .env.sample to .env and change the API_http and API_socket from to your CDK deployment result  
+
 
 ## Build files  
 `cd ~/chatbotFE`   
