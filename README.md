@@ -12,6 +12,7 @@ please open ports 80 and 3000 for the security group
 
 ## Install backend service with cdk
 `cd deoploy`  
+* `npm install`          install dependencies
 * `npm run test`         perform the jest unit tests
 * `cdk deploy`           deploy this stack to your default AWS account/region
 * `cdk diff`             compare deployed stack with current state
